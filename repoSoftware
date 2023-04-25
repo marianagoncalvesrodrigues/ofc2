@@ -1,0 +1,21 @@
+https://github.com/Gubiar/node_websocket
+
+index.js:
+app.post('/maquinas', (req, res) => {
+  // Aqui você pode adicionar o código para manipular os dados recebidos pelo endpoint
+  console.log(req.body);
+  // Envia a mensagem para todos os clientes conectados no WebSocket
+ // clients.forEach((client) => {
+ //   if (client.readyState === WebSocket.OPEN) {
+  //    client.send(req.body);
+  //  }
+  //});
+  res.status(200).json({"Aqui":true});
+});
+
+app.get('/', (req, res) => {
+  // Aqui você pode adicionar o código para manipular os dados recebidos pelo endpoint
+
+  // Envia a mensagem para todos os clientes conectados no WebSocket
+  res.status(200).send('Deu certo get');
+});
