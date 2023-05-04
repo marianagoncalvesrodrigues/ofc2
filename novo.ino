@@ -25,7 +25,7 @@ SoftwareSerial serialAT;
 #ifdef WIFI
   #include <ESP8266WiFi.h>
   #define WIFI_NAME "Baidu_Avast"
-  #define WIFI_PASS "lasanhademorango10"
+  #define WIFI_PASS "teste"
 #endif
 
 const byte tx=12; //D6 impresso na placa
